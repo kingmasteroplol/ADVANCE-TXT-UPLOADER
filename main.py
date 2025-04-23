@@ -43,7 +43,7 @@ cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
 #pwimg = "https://graph.org/file/8add8d382169e326f67e0-3bf38f92e52955e977.jpg"
 #ytimg = "https://graph.org/file/3aa806c302ceec62e6264-60ced740281395f68f.jpg"
-cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"  
+cpimg = "https://graph.org/file/d8e99da7386f40951ff94-74239f736d123ec69d.jpg"  
 
 
 async def show_random_emojis(message):
@@ -52,12 +52,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 5840594311 # Replace with the actual owner's user ID
+OWNER_ID = 7755066341 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
 SUDO_USERS = [5840594311,7856557198,6303334633]
 
-AUTH_CHANNEL = -1002572301679
+AUTH_CHANNEL = -1002588526391
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -113,14 +113,14 @@ keyboard = InlineKeyboardMarkup(
                     [
                     InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/TxtToVideoUpdateChannel") ],
                     [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/TxtToVideoUpdateChannel")                              
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="miya")                              
                 ],           
             ]
       )
     
 # Image URLs for the random image feature
 image_urls = [
-    "https://graph.org/file/996d4fc24564509244988-a7d93d020c96973ba8.jpg",
+    "https://graph.org/file/d8e99da7386f40951ff94-74239f736d123ec69d.jpg",
     "https://graph.org/file/96d25730136a3ea7e48de-b0a87a529feb485c8f.jpg",
     "https://graph.org/file/6593f76ddd8c735ae3ce2-ede9fa2df40079b8a0.jpg",
     "https://graph.org/file/a5dcdc33020aa7a488590-79e02b5a397172cc35.jpg",
@@ -146,7 +146,7 @@ random_image_url = random.choice(image_urls)
 caption = (
         "**ʜᴇʟʟᴏ👋**\n\n"
         "➠ **ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.**\n"
-        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /tushar.\n"
+        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /miya.\n"
         "➠ **ғᴏʀ ɢᴜɪᴅᴇ sᴇɴᴅ /help."
 )
     
@@ -313,7 +313,7 @@ async def edit_txt(client, message: Message):
     try:
         await message.reply_document(
             document=final_file_path,
-            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ 𝗧𝘂𝘀𝗵𝗮𝗿**"
+            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ miya**"
         )
     except Exception as e:
         await message.reply_text(f"🚨 **Error**: Unable to send the file.\n\nDetails: {e}")
@@ -859,7 +859,7 @@ async def upload(bot: Client, m: Message):
                        f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
                        f"✅𝗦𝗧𝗔𝗧𝗨𝗦 » 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗`")
     await m.reply_text(f"<pre><code>📥𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤『{CR}』</code></pre>")
-    await m.reply_text(f"<pre><code>『😏𝗥𝗲𝗮𝗰𝘁𝗶𝗼𝗻 𝗞𝗼𝗻 𝗗𝗲𝗴𝗮😏』</code></pre>")                 
+    await m.reply_text(f"<pre><code>『😏@maxi_bhai😏』</code></pre>")                 
 
 bot.run()
 if __name__ == "__main__":
